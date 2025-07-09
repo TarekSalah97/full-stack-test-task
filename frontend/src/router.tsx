@@ -3,13 +3,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import Welcome from './pages/Welcome';
 // import ProtectedRoute from './components/ProtectedRoute';
 import SignUp from './pages/Signup';
+import SignIn from './pages/Signin';
 
 const AppRouter = () => (
   <BrowserRouter>
     <Routes>
       <Route path="/signup" element={<SignUp />} />
-      {/* <Route path="/signin" element={<SignIn />} />
-      <Route
+      <Route path="/signin" element={<SignIn />} />
+      {/* <Route
         path="/welcome"
         element={
           <ProtectedRoute>
