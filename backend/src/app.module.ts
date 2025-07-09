@@ -7,7 +7,6 @@ import { UsersModule } from './users/users.module';
 import { ConfigModule } from '@nestjs/config';
 import { ProtectedModule } from './protected/protected.module';
 
-
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
@@ -16,7 +15,7 @@ import { ProtectedModule } from './protected/protected.module';
     ),
     AuthModule,
     UsersModule,
-    ProtectedModule
+    ProtectedModule,
   ],
   controllers: [AppController],
   providers: [AppService],
